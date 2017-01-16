@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<title>jquery</title>
+
+	<style type="">
+		
+		#parent .col-md-4 {
+			
+			background-color: #a9dcc4;
+		}
+
+		h2 {
+			color: #1a47c6;
+			text-align: center;
+		}
+
+		#comment {
+			padding-left: 15px;
+		}
+
+		#btn_comm {
+			margin-left: 15px;
+		}
+
+
+		.mobile, .web {
+		background: #1a47c6;
+		height: 220px;
+		width: 350px;
+		margin: 15px;
+		color: white;
+		font-size: 20px;
+		font-weight: bold;
+	
+		}
+
+
+		#web_btn, #mobile_btn , #all {
+			padding: 10px;
+			/*background: grey;*/
+			margin-left: 100px;
+		}
+
+		hr {
+
+			border: 2px solid;
+		}
+	</style>
+
+
+
+
+</head>
+<body>
+
+<h2>Change height of the third div</h2> 
+<br> <br>
+
+<div id="parent" class="wow fadeInRight">
+
+		<div class="row">
+			<div class="col-md-4">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				
+			</div>
+
+			<div class="col-md-4">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				
+			</div>
+			<div class="col-md-4">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				
+			</div>
+
+
+		</div>
+
+</div>
+<br><br><br><br><br><br>
+
+
+
+<button class="btn-primary btn-block btn-lg" id="btn">
+	Click me to change the height of the paragraphs!!
+</button>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<hr>
+<!-- COMMENT BOX SECTION -->
+
+
+
+
+
+<h2 class="wow fadeInRight">Comment box</h2>
+<br><br>
+
+<h3 id="comment">New comments will be added here:</h3>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+ 
+	<div class="col-md-4">
+		<textarea class="form-control" rows="5" id = "comment_field" placeholder="enter your comments"></textarea>
+	</div>
+
+	<br><br><br><br><br><br><br><br>
+  
+
+
+<button id="btn_comm" class="btn-lg btn-primary">Comment Now</button>
+
+
+<!-- End -->
+
+
+<!-- Login system start -->
+
+<hr>
+<h2 class="wow fadeInRight">Login System</h2>
+<h3 style="text-align: center"><code>This system will only accept "nahian" as username and "nahian12345" as password.</code></h3>
+<br><br><br><br>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-6 wow fadeInRight">
+			<form class="form-horizontal">
+				<div class="form-group">
+					<label for="name" class="col-sm-2 control-label">Name</label>
+					<div class="col-sm-6">
+						<input type="text" class="form-control" id="name" placeholder="enter name">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="password" class="col-sm-2 control-label">Password</label>
+					<div class="col-sm-6">
+						<input type="password" class="form-control" id="password" placeholder="Password">
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-sm-offset-2 col-sm-6">
+						<div class="checkbox">
+							<label>
+								<input type="checkbox"> Remember me
+							</label>
+						</div>
+					</div>
+				</div>
+
+			</form>
+		</div>
+
+		<div class="col-md-6">
+			<h2 id="login_msg"></h2>
+		</div>
+		
+	</div>
+
+
+</div>
+
+<!-- button -->
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 wow fadeInRight">
+				   	<div class="col-md-6 col-md-offset-1">
+      				<button class="btn btn-primary btn-lg" id="btn_login">Sign in</button>
+    				</div>
+  
+			</div>
+		</div>
+	</div>	
+
+ <hr>
+
+<br>
+
+
+<br><br><br>
+
+
+
+<!-- filter method -->
+
+
+<div id="filter" class="wow fadeInRight">
+	<h2>Filter Method</h2>
+<div class="container">
+	<div class="row">
+		<div class="col-md-4 mobile wow wobble">
+			Mobile
+		</div>
+		<div class="col-md-4 mobile wow wobble">
+			Mobile
+		</div>
+		<div class="col-md-4 mobile wow wobble">
+			Mobile
+		</div>
+		<div class="col-md-4 web wow wobble" >
+			Web
+		</div>
+		<div class="col-md-4 web wow wobble" >
+			Web
+		</div>
+		<div class="col-md-4 web wow wobble" >
+			Web
+		</div>
+	</div>
+</div>
+
+
+</div>
+
+
+<br><br>
+
+<button id="mobile_btn" class="btn-primary btn-lg">
+	
+Show Mobile
+</button>
+
+<button id="web_btn" class="btn-primary btn-lg">
+	
+Show Web
+</button>
+
+<button id="all" class="btn-primary btn-lg">
+	
+Show All
+</button>
+
+<br>
+<br>
+<br>
+<br>	
+
+<div class ="wow fadeInRightBig">
+<h2>End of My Project</h2>
+</div>
+
+<h1 style="text-align: center" class="wow wobble">Thank You!</h1>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+	<script>
+    new WOW().init();
+    </script>
+	<script src = "script.js"></script>
+</body>
+</html>
